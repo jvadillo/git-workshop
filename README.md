@@ -63,10 +63,18 @@ En esta sección, aprenderemos a crear, modificar y sincronizar archivos en un r
 
       Contenido inicial escrito por Persona 1.
       ```
-      Comandos:
+      Para ello puedes crear el archivo mediante cualquier editor de tu elección o utilizar el siguiente comando:
+      
       ```bash
       echo "# Archivo 1\n\nContenido inicial escrito por Persona 1." > archivo1.md
+      ```
+      
+      A continuación añade el archivo al "stage" para confirmarlo en el repositorio local.
+      ```bash
       git add archivo1.md
+       ```
+      Para finalizar confirma el archivo que has agregado al "stage" en el repositorio local
+      ```bash
       git commit -m "Añadir archivo1.md con contenido inicial (Persona 1)"
       ```
     - **Persona 2:** Crear un archivo llamado `archivo2.md` con este contenido:
@@ -75,7 +83,7 @@ En esta sección, aprenderemos a crear, modificar y sincronizar archivos en un r
 
       Contenido inicial escrito por Persona 2.
       ```
-      Comandos:
+      Realiza los mismos pasos que la Persona 1:
       ```bash
       echo "# Archivo 2\n\nContenido inicial escrito por Persona 2." > archivo2.md
       git add archivo2.md
